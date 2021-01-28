@@ -1,0 +1,102 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="jumbotron-img jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Создаём умный ИИ</h1>
+            <p class="lead">Проектируем свёрточные нейронные сети</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row mb-3">
+            <div class="col">
+                <button class="btn btn-question">Наша команда</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div style="box-shadow: 2px 3px 9px 4px rgba(0,0,0,0.04);">
+                    <div class="q-container p-4">
+                        <div class="row">
+                            <div class="col-2 text-center">
+                                <img src="{{ asset('images/alister.jpg') }}" width="100" height="100">
+                                <div class="d-block mt-3 vote-arrows">
+                                    <a class="vote-up" href="#"><i class="far fa-arrow-alt-circle-up"></i></a>
+                                    <a class="vote-down" href="#"><i class="far fa-arrow-alt-circle-down"></i></a>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <a class="q-title" href="{{ path('app_question_show', {slug: 'alister'}) }}"><h2>Алистер</h2></a>
+                                <div class="q-display p-3">
+                                    <i class="fa fa-quote-left mr-3"></i>
+                                    <p class="d-inline">Йооу! Кому нужен ИИ, пишите!</p>
+                                    <p class="pt-4"><strong>--Алистер</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="answer-link" href="#" style="color: #fff;">
+                        <p class="q-display-response text-center p-3">
+                            <i class="fa fa-magic magic-wand"></i> 2 ответа
+                        </p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-12 mt-3">
+                <div class="q-container p-4">
+                    <div class="row">
+                        <div class="col-2 text-center">
+                            <img src="{{ asset('images/almaz.jpg') }}" width="100" height="100">
+                            <div class="d-block mt-3 vote-arrows">
+                                <a class="vote-up" href="#"><i class="far fa-arrow-alt-circle-up"></i></a>
+                                <a class="vote-down" href="#"><i class="far fa-arrow-alt-circle-down"></i></a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <a class="q-title" href="{{ path('app_question_show', {slug: 'almaz'}) }}"><h2>Алмаз</h2></a>
+                            <div class="q-display p-3">
+                                <i class="fa fa-quote-left mr-3"></i>
+                                <p class="d-inline">Ребята! Делаю крутые нейронки! Го работать!</p>
+                                <p class="pt-4"><strong>--Алмаз</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="answer-link" href="#" style="color: #fff;">
+                    <p class="q-display-response text-center p-3">
+                        <i class="fa fa-magic magic-wand"></i> 5 ответов
+                    </p>
+                </a>
+            </div>
+
+            <div class="col-12 mt-3">
+                <div class="q-container p-4">
+                    <div class="row">
+                        <div class="col-2 text-center">
+                            <img src="{{ asset('images/artur.jpg') }}" width="100" height="100">
+                            <div class="d-block mt-3 vote-arrows">
+                                <a class="vote-up" href="#"><i class="far fa-arrow-alt-circle-up"></i></a>
+                                <a class="vote-down" href="#"><i class="far fa-arrow-alt-circle-down"></i></a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <a class="q-title" href="{{ path('app_question_show', {slug: 'artur'}) }}"><h2>Артур</h2></a>
+                            <div class="q-display p-3">
+                                <i class="fa fa-quote-left mr-3"></i>
+                                <p class="d-inline">Покажу вам что такое мир нейронных сетей и продам вам это! Бугагага!</p>
+                                <p class="pt-4"><strong>--Артур</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="answer-link" href="#" style="color: #fff;">
+                    <p class="q-display-response text-center p-3">
+                        <i class="fa fa-magic magic-wand"></i> 48 ответов
+                    </p>
+                </a>
+            </div>
+
+        </div>
+    </div>
+{% endblock %}
