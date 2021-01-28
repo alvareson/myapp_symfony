@@ -16,7 +16,7 @@ class CommentController extends AbstractController
     public function commentVote($id, $direction) {
         // todo use id to query DataBase
         if ($direction == 'up') {
-            $currentVoteCount = rand(7, 100);
+            $currentVoteCount = rand(7, 99);
         } else {
             $currentVoteCount = rand(0, 5);
         }
